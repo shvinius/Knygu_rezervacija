@@ -21,7 +21,7 @@ namespace Knygu_rezervacijos.Controllers
         {
             return View();
         }
-        public IActionResult Skaitytojui()
+        public IActionResult SkaitytojoRegistracija()
         {
             return View();
         }

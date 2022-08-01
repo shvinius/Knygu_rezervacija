@@ -2,8 +2,8 @@
 {
     public class Rezervacija
     {
-        public string Knygos_isbn { get; set; }
-        public int Skaitytojo_pazymejimo_id { get; set; }
-        public int Knygu_kiekis { get; set; }
+        public string KnygosIsbn { get; set; }
+        public int SkaitytojoPazymejimoId { get; set; }
+        public int KnyguKiekis { get; set; }
     }
 }
