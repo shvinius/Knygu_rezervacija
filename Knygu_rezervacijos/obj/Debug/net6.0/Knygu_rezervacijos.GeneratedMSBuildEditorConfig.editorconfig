@@ -15,16 +15,36 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Paulius\Documents\VZ programavimas\ASP.NET\Metu_projektas\Knygu_rezervacijos
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Paulius/Documents/VZ programavimas/ASP.NET/Metu_projektas/Knygu_rezervacijos/Views/Home/Admin.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pbi5jc2h0bWw=
+[C:/Users/Paulius/Documents/VZ programavimas/ASP.NET/Metu_projektas/Knygu_rezervacijos/Views/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Paulius/Documents/VZ programavimas/ASP.NET/Metu_projektas/Knygu_rezervacijos/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Paulius/Documents/VZ programavimas/ASP.NET/Metu_projektas/Knygu_rezervacijos/Views/Home/SkaitytojoRegistracija.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTa2FpdHl0b2pvUmVnaXN0cmFjaWphLmNzaHRtbA==
+[C:/Users/Paulius/Documents/VZ programavimas/ASP.NET/Metu_projektas/Knygu_rezervacijos/Views/Knygas/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS255Z2FzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Paulius/Documents/VZ programavimas/ASP.NET/Metu_projektas/Knygu_rezervacijos/Views/Knygas/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS255Z2FzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Paulius/Documents/VZ programavimas/ASP.NET/Metu_projektas/Knygu_rezervacijos/Views/Knygas/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS255Z2FzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Paulius/Documents/VZ programavimas/ASP.NET/Metu_projektas/Knygu_rezervacijos/Views/Knygas/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS255Z2FzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Paulius/Documents/VZ programavimas/ASP.NET/Metu_projektas/Knygu_rezervacijos/Views/Knygas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS255Z2FzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Paulius/Documents/VZ programavimas/ASP.NET/Metu_projektas/Knygu_rezervacijos/Views/Megstamiausios/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVnc3RhbWlhdXNpb3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Paulius/Documents/VZ programavimas/ASP.NET/Metu_projektas/Knygu_rezervacijos/Views/Shared/Error.cshtml]
@@ -33,6 +53,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Paulius/Documents/VZ programavimas/ASP.NET/Metu_projektas/Knygu_rezervacijos/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Paulius/Documents/VZ programavimas/ASP.NET/Metu_projektas/Knygu_rezervacijos/Views/SkaitytojoRegistracija/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2thaXR5dG9qb1JlZ2lzdHJhY2lqYVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Paulius/Documents/VZ programavimas/ASP.NET/Metu_projektas/Knygu_rezervacijos/Views/_ViewImports.cshtml]

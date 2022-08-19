@@ -1,9 +1,26 @@
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using Knygu_rezervacijos.Data;
+using Knygu_rezervacijos.Models;
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddDbContext<Knygu_rezervacijosContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("Knygu_rezervacijosContext") ?? throw new InvalidOperationException("Connection string 'Knygu_rezervacijosContext' not found.")));
+
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
+
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+
+    SeedData.Initialize(services);
+}
+
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -25,3 +42,4 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
+

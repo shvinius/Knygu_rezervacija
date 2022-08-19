@@ -2,6 +2,7 @@
 {
     public class Knyga
     {
+        public int Id { get; set; }
         public string Pavadinimas { get; set; }
         public string Santrauka { get; set; }
         public string ISBN { get; set; }

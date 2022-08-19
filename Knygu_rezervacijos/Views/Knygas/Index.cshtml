@@ -1,0 +1,65 @@
+﻿@model IEnumerable<Knygu_rezervacijos.Models.Knyga>
+
+@{
+    ViewData["Title"] = "Knyg";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Pavadinimas)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Santrauka)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ISBN)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nuotrauka)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PuslapiuSkaicius)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Kiekis)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Pavadinimas)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Santrauka)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ISBN)
+            </td>
+            <td>
+                <img src="@Html.DisplayFor(modelItem => item.Nuotrauka)"/>
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PuslapiuSkaicius)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Kiekis)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

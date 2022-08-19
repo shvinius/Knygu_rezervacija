@@ -19,10 +19,31 @@ body {
 
 .card {
     width: 100%;
-    height: 1000px;
-    background-color: #151515;
-    color: white;
+    height: 1800px;
+    background-color: white;
+    color: #151515;
     border: 10px solid;
+    border-image: linear-gradient( #ff512f, #dd2476, #1c64ff) 1;
+    animation: rotate 2.5s ease-in infinite;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+@keyframes rotate {
+    50% {
+        border-image: linear-gradient( 360deg, #ff512f, #dd2476, #1c64ff) 1;
+    }
+}
+
+.card2 {
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    color: #151515;
+    border-top: 10px solid;
+    border-left: 10px solid;
+    border-right: 10px solid;
     border-image: linear-gradient( #ff512f, #dd2476, #1c64ff) 1;
     animation: rotate 2.5s ease-in infinite;
     justify-content: space-between;
@@ -38,10 +59,10 @@ body {
 
 .button {
     display: inline-block;
-    background-color: #151515;
-    color: white;
+    background-color: white;
+    color: #151515;
     text-decoration: none;
-    padding: 10px 30px;
+    padding: 10px 20px;
     border: 3px solid #3c67e3;
     border-radius: 10px;
 }
@@ -57,15 +78,15 @@ body {
     }
 }
 
-.juoda {
+.baltajuosta {
     width: 100%;
     height: 60px;
-    background-color: #151515;
-    color: white;
+    background-color: white;
+    color: #151515;
 }
 
 .text::selection {
-    background-color: mediumpurple;
+    background-color: #1fe8b6;
     color: white;
 }
 
@@ -139,5 +160,30 @@ body {
     height: 500px;
     display: flex;
     flex-direction: column;
-    row-gap: 70px;
+    row-gap: 50px;
+}
+.callout {
+    display: flex;
+    width: 95%;
+    height: 700px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.pagrindinioeilute {
+    display: flex;
+    width: 20%;
+    height: 200px;
+    justify-content: space-between;
+    align-items:center;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    justify-content:center;
+}
+.pagrindinioknygosmygtukai {
+    display: flex;
+    border-radius: 20px;
+    color: azure;
+    width: 100%;
+    height: 450px;
 }

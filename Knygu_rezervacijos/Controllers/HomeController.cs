@@ -17,14 +17,6 @@ namespace Knygu_rezervacijos.Controllers
         {
             return View();
         }
-        public IActionResult Admin()
-        {
-            return View();
-        }
-        public IActionResult SkaitytojoRegistracija()
-        {
-            return View();
-        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
