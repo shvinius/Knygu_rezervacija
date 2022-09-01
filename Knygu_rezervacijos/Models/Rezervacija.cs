@@ -2,8 +2,9 @@
 {
     public class Rezervacija
     {
-        public string KnygosIsbn { get; set; }
-        public int SkaitytojoPazymejimoId { get; set; }
+        public int Id { get; set; }
         public int KnyguKiekis { get; set; }
+        public Knyga Knyga { get; set; }
+        public Skaitytojas Skaitytojas { get; set; }
     }
 }
