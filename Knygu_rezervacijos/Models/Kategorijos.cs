@@ -1,4 +1,7 @@
-﻿namespace Knygu_rezervacijos.Models
+﻿using MessagePack;
+
+
+namespace Knygu_rezervacijos.Models
 {
     public class Kategorijos
     {
