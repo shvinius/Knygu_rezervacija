@@ -159,5 +159,14 @@ namespace Knygu_rezervacijos.Controllers
         {
           return (_context.Knyga?.Any(e => e.Id == id)).GetValueOrDefault();
         }
+
+        [HttpPost]
+        public async Task<IActionResult> MyAction(int valueINeed)
+        {
+            Console.WriteLine("Kiekis:", valueINeed);
+            return _context.Knyga != null ?
+                View(await _context.Knyga.ToListAsync()) :
+                Problem("Entity set 'Knygu_rezervacijosContext.Knyga'  is null.");
+        }
     }
 }

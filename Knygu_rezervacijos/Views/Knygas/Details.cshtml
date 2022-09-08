@@ -46,9 +46,11 @@
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Kiekis)
         </dd>
-        <p>Pasirinkite kiekį: <input type="number"></p>
     </dl>
-    <a href="#" class="button">Rezervuoti</a>
+    <form asp-action="MyAction" method="POST">
+        Pasirinkite kiekį: <input type="number" name="valueINeed" />
+        <input type="submit" value="Rezervuoti">
+    </form>
 </div>
 <div>
     <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
