@@ -10,87 +10,88 @@ using Knygu_rezervacijos.Models;
 
 namespace Knygu_rezervacijos.Controllers
 {
-    public class KnygasController : Controller
+    public class SkaitytojasController : Controller
     {
         private readonly Knygu_rezervacijosContext _context;
 
-        public KnygasController(Knygu_rezervacijosContext context)
+        public SkaitytojasController(Knygu_rezervacijosContext context)
         {
             _context = context;
         }
 
-        // GET: Knygas
+        // GET: Skaitytojas
         public async Task<IActionResult> Index()
         {
-              return _context.Knyga != null ? 
-                          View(await _context.Knyga.ToListAsync()) :
-                          Problem("Entity set 'Knygu_rezervacijosContext.Knyga'  is null.");
+              return View(await _context.Skaitytojas.ToListAsync());
         }
 
-        // GET: Knygas/Details/5
-        public async Task<IActionResult> Details(int id)
+        // GET: Skaitytojas/Details/5
+        public async Task<IActionResult> Details(int? id)
         {
-            if (id == null || _context.Knyga == null)
+            if (id == null || _context.Skaitytojas == null)
             {
                 return NotFound();
             }
 
-            var knyga = await _context.Knyga
-                .FirstOrDefaultAsync(m => m.Id == id);
-            if (knyga == null)
+            var skaitytojas = await _context.Skaitytojas
+                .FirstOrDefaultAsync(m => m.PazymejimoId == id);
+            if (skaitytojas == null)
             {
                 return NotFound();
             }
 
-            return View(knyga);
+            return View(skaitytojas);
         }
 
-        // GET: Knygas/Create
+        // GET: Skaitytojas/Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: Knygas/Create
+        // POST: Skaitytojas/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Pavadinimas,Santrauka,ISBN,Nuotrauka,PuslapiuSkaicius,Kiekis")] Knyga knyga)
+        public async Task<IActionResult> Create([Bind("PazymejimoId,Vardas,Pavarde,PazymejimoIsdavimoData,Slaptazodis")] Skaitytojas skaitytojas)
         {
+            Console.WriteLine("Slaptazodis:", skaitytojas.Slaptazodis);
+            Console.WriteLine("Pakartotinas slaptazodis:", skaitytojas.PakartotiSlaptazodi);
+
             if (ModelState.IsValid)
             {
-                _context.Add(knyga);
+                _context.Add(skaitytojas);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(knyga);
+            return View(skaitytojas);
         }
 
-        // GET: Knygas/Edit/5
-        public async Task<IActionResult> Edit(int id)
+        // GET: Skaitytojas/Edit/5
+        public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null || _context.Knyga == null)
+            if (id == null || _context.Skaitytojas == null)
             {
                 return NotFound();
             }
 
-            var knyga = await _context.Knyga.FindAsync(id);
-            if (knyga == null)
+            var skaitytojas = await _context.Skaitytojas.FindAsync(id);
+            if (skaitytojas == null)
             {
                 return NotFound();
             }
-            return View(knyga);
+            return View(skaitytojas);
         }
 
-        // POST: Knygas/Edit/5
+        // POST: Skaitytojas/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Pavadinimas,Santrauka,ISBN,Nuotrauka,PuslapiuSkaicius,Kiekis")] Knyga knyga)
+        public async Task<IActionResult> Edit(int id, [Bind("PazymejimoId,Vardas,Pavarde,PazymejimoIsdavimoData,Slaptazodis")] Skaitytojas skaitytojas)
         {
-            if (id != knyga.Id)
+            if (id != skaitytojas.PazymejimoId)
             {
                 return NotFound();
             }
@@ -99,12 +100,12 @@ namespace Knygu_rezervacijos.Controllers
             {
                 try
                 {
-                    _context.Update(knyga);
+                    _context.Update(skaitytojas);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!KnygaExists(knyga.Id))
+                    if (!SkaitytojasExists(skaitytojas.PazymejimoId))
                     {
                         return NotFound();
                     }
@@ -115,59 +116,49 @@ namespace Knygu_rezervacijos.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(knyga);
+            return View(skaitytojas);
         }
 
-        // GET: Knygas/Delete/5
-        public async Task<IActionResult> Delete(int id)
+        // GET: Skaitytojas/Delete/5
+        public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null || _context.Knyga == null)
+            if (id == null || _context.Skaitytojas == null)
             {
                 return NotFound();
             }
 
-            var knyga = await _context.Knyga
-                .FirstOrDefaultAsync(m => m.Id == id);
-            if (knyga == null)
+            var skaitytojas = await _context.Skaitytojas
+                .FirstOrDefaultAsync(m => m.PazymejimoId == id);
+            if (skaitytojas == null)
             {
                 return NotFound();
             }
 
-            return View(knyga);
+            return View(skaitytojas);
         }
 
-        // POST: Knygas/Delete/5
+        // POST: Skaitytojas/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            if (_context.Knyga == null)
+            if (_context.Skaitytojas == null)
             {
-                return Problem("Entity set 'Knygu_rezervacijosContext.Knyga'  is null.");
+                return Problem("Entity set 'Knygu_rezervacijosContext.Skaitytojas'  is null.");
             }
-            var knyga = await _context.Knyga.FindAsync(id);
-            if (knyga != null)
+            var skaitytojas = await _context.Skaitytojas.FindAsync(id);
+            if (skaitytojas != null)
             {
-                _context.Knyga.Remove(knyga);
+                _context.Skaitytojas.Remove(skaitytojas);
             }
             
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool KnygaExists(int id)
+        private bool SkaitytojasExists(int id)
         {
-          return (_context.Knyga?.Any(e => e.Id == id)).GetValueOrDefault();
-        }
-
-        [HttpPost]
-        public async Task<IActionResult> MyAction(int valueINeed)
-        {
-            Console.WriteLine("Kiekis:", valueINeed);
-            return _context.Knyga != null ?
-                View(await _context.Knyga.ToListAsync()) :
-                Problem("Entity set 'Knygu_rezervacijosContext.Knyga'  is null.");
-
+          return _context.Skaitytojas.Any(e => e.PazymejimoId == id);
         }
     }
 }

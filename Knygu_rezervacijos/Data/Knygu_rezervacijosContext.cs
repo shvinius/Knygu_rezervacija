@@ -15,5 +15,7 @@ namespace Knygu_rezervacijos.Data
         }
 
         public DbSet<Knygu_rezervacijos.Models.Knyga> Knyga { get; set; }
+
+        public DbSet<Knygu_rezervacijos.Models.Skaitytojas> Skaitytojas { get; set; }
     }
 }

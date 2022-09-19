@@ -1,4 +1,5 @@
 ﻿using MessagePack;
+using System.ComponentModel.DataAnnotations.Schema;
 using KeyAttribute = System.ComponentModel.DataAnnotations.KeyAttribute;
 
 namespace Knygu_rezervacijos.Models
@@ -16,6 +17,8 @@ namespace Knygu_rezervacijos.Models
         public string Pavarde { get; set; }
         public DateTime PazymejimoIsdavimoData { get; set; }
         public string Slaptazodis { get; set; }
+        [NotMapped]
+        public string PakartotiSlaptazodi { get; set; }
 
         public virtual ICollection<Rezervacija> Rezervacijos { get; set; }
         public virtual ICollection<Knyga> Megstamiausios { get; set; }

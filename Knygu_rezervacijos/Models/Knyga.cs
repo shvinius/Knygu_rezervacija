@@ -1,4 +1,12 @@
-﻿namespace Knygu_rezervacijos.Models
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+
+
+
+
+
+namespace Knygu_rezervacijos.Models
 {
     public class Knyga
     {
@@ -8,7 +16,9 @@
             this.Rezervacijos = new HashSet<Rezervacija>();
         }
         public int Id { get; set; }
+        [StringLength(200, ErrorMessage = "Pavadinimas cannot be longer than 200 characters.")]
         public string Pavadinimas { get; set; }
+    
         public string Santrauka { get; set; }
         public string ISBN { get; set; }
         public string Nuotrauka { get; set; }

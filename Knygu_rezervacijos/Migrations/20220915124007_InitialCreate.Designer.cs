@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Knygu_rezervacijos.Migrations
 {
     [DbContext(typeof(Knygu_rezervacijosContext))]
-    [Migration("20220901081702_InitialCreate")]
+    [Migration("20220915124007_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -76,7 +76,8 @@ namespace Knygu_rezervacijos.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Pavadinimas")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
 
                     b.Property<int>("PuslapiuSkaicius")
                         .HasColumnType("int");
