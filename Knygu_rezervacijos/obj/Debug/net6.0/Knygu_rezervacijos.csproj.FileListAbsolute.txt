@@ -29,7 +29,6 @@ C:\Users\Paulius\Documents\VZ programavimas\ASP.NET\Metu_projektas\Knygu_rezerva
 C:\Users\Paulius\Documents\VZ programavimas\ASP.NET\Metu_projektas\Knygu_rezervacijos\bin\Debug\net6.0\MessagePack.Annotations.dll
 C:\Users\Paulius\Documents\VZ programavimas\ASP.NET\Metu_projektas\Knygu_rezervacijos\bin\Debug\net6.0\Microsoft.AspNetCore.Razor.Language.dll
 C:\Users\Paulius\Documents\VZ programavimas\ASP.NET\Metu_projektas\Knygu_rezervacijos\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
-C:\Users\Paulius\Documents\VZ programavimas\ASP.NET\Metu_projektas\Knygu_rezervacijos\bin\Debug\net6.0\Microsoft.Build.Locator.dll
 C:\Users\Paulius\Documents\VZ programavimas\ASP.NET\Metu_projektas\Knygu_rezervacijos\bin\Debug\net6.0\Microsoft.CodeAnalysis.AnalyzerUtilities.dll
 C:\Users\Paulius\Documents\VZ programavimas\ASP.NET\Metu_projektas\Knygu_rezervacijos\bin\Debug\net6.0\Microsoft.CodeAnalysis.dll
 C:\Users\Paulius\Documents\VZ programavimas\ASP.NET\Metu_projektas\Knygu_rezervacijos\bin\Debug\net6.0\Microsoft.CodeAnalysis.CSharp.dll
@@ -261,3 +260,6 @@ C:\Users\Paulius\Documents\VZ programavimas\ASP.NET\Metu_projektas\Knygu_rezerva
 C:\Users\Paulius\Documents\VZ programavimas\ASP.NET\Metu_projektas\Knygu_rezervacijos\obj\Debug\net6.0\Knygu_rezervacijos.csproj.CopyComplete
 C:\Users\Paulius\Documents\VZ programavimas\ASP.NET\Metu_projektas\Knygu_rezervacijos\bin\Debug\net6.0\MySqlConnector.dll
 C:\Users\Paulius\Documents\VZ programavimas\ASP.NET\Metu_projektas\Knygu_rezervacijos\bin\Debug\net6.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\Paulius\Documents\VZ programavimas\ASP.NET\Metu_projektas\Knygu_rezervacijos\bin\Debug\net6.0\Microsoft.Build.dll
+C:\Users\Paulius\Documents\VZ programavimas\ASP.NET\Metu_projektas\Knygu_rezervacijos\bin\Debug\net6.0\Microsoft.Build.Framework.dll
+C:\Users\Paulius\Documents\VZ programavimas\ASP.NET\Metu_projektas\Knygu_rezervacijos\bin\Debug\net6.0\Microsoft.NET.StringTools.dll

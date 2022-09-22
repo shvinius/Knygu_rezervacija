@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Knygu_rezervacijos.Migrations
 {
     [DbContext(typeof(Knygu_rezervacijosContext))]
-    [Migration("20220915124007_InitialCreate")]
+    [Migration("20220922070931_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

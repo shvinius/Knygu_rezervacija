@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Knygu_rezervacijos.Data;
 using Knygu_rezervacijos.Models;
+using Microsoft.AspNetCore.Routing;
 
 namespace Knygu_rezervacijos.Controllers
 {
@@ -54,10 +55,22 @@ namespace Knygu_rezervacijos.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("PazymejimoId,Vardas,Pavarde,PazymejimoIsdavimoData,Slaptazodis")] Skaitytojas skaitytojas)
+        public async Task<IActionResult> Create([Bind("PazymejimoId,Vardas,Pavarde,PazymejimoIsdavimoData,Slaptazodis,PakartotiSlaptazodi")] Skaitytojas skaitytojas)
         {
-            Console.WriteLine("Slaptazodis:", skaitytojas.Slaptazodis);
-            Console.WriteLine("Pakartotinas slaptazodis:", skaitytojas.PakartotiSlaptazodi);
+            Console.WriteLine("Vardas:" + skaitytojas.Vardas);
+            Console.WriteLine("Pavarde:"  + skaitytojas.Pavarde);
+            Console.WriteLine("Slaptazodis:" + skaitytojas.Slaptazodis);
+            Console.WriteLine("Pakartotinas:" + skaitytojas.PakartotiSlaptazodi);
+
+            if (String.Equals(skaitytojas.Slaptazodis, skaitytojas.PakartotiSlaptazodi))
+            {
+                Console.WriteLine($"{skaitytojas.Slaptazodis} and {skaitytojas.PakartotiSlaptazodi} have same value.");
+            }
+            else
+            {
+                Console.WriteLine($"{skaitytojas.Slaptazodis} and {skaitytojas.PakartotiSlaptazodi} are different.");
+                return View("Nesutampa");
+            }
 
             if (ModelState.IsValid)
             {
@@ -66,6 +79,8 @@ namespace Knygu_rezervacijos.Controllers
                 return RedirectToAction(nameof(Index));
             }
             return View(skaitytojas);
+
+            
         }
 
         // GET: Skaitytojas/Edit/5

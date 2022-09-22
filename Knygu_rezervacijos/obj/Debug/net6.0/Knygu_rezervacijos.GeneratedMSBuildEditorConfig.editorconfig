@@ -23,6 +23,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Paulius/Documents/VZ programavimas/ASP.NET/Metu_projektas/Knygu_rezervacijos/Views/Kategorijos/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2F0ZWdvcmlqb3NcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Paulius/Documents/VZ programavimas/ASP.NET/Metu_projektas/Knygu_rezervacijos/Views/Kategorijos/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2F0ZWdvcmlqb3NcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Paulius/Documents/VZ programavimas/ASP.NET/Metu_projektas/Knygu_rezervacijos/Views/Kategorijos/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2F0ZWdvcmlqb3NcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Paulius/Documents/VZ programavimas/ASP.NET/Metu_projektas/Knygu_rezervacijos/Views/Kategorijos/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2F0ZWdvcmlqb3NcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Paulius/Documents/VZ programavimas/ASP.NET/Metu_projektas/Knygu_rezervacijos/Views/Kategorijos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2F0ZWdvcmlqb3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Paulius/Documents/VZ programavimas/ASP.NET/Metu_projektas/Knygu_rezervacijos/Views/Knygas/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS255Z2FzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -77,6 +97,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Paulius/Documents/VZ programavimas/ASP.NET/Metu_projektas/Knygu_rezervacijos/Views/Skaitytojas/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2thaXR5dG9qYXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Paulius/Documents/VZ programavimas/ASP.NET/Metu_projektas/Knygu_rezervacijos/Views/Skaitytojas/Nesutampa.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2thaXR5dG9qYXNcTmVzdXRhbXBhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Paulius/Documents/VZ programavimas/ASP.NET/Metu_projektas/Knygu_rezervacijos/Views/SkaitytojoRegistracija/Index.cshtml]

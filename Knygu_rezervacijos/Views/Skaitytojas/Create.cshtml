@@ -28,12 +28,12 @@
             </div>
             <div class="form-group registracijoslaukelis">
                 <label asp-for="Slaptazodis" class="control-label">Slaptažodis</label>
-                <input type="password" class="form-control" />
+                <input type="password" asp-for="Slaptazodis" class="form-control" />
                 <span asp-validation-for="Slaptazodis" class="text-danger"></span>
             </div>
             <div class="form-group registracijoslaukelis">
                 <label asp-for="PakartotiSlaptazodi" class="control-label">Pakartoti slaptažodį</label>
-                <input type="password" class="form-control" />
+                <input type="password" asp-for="PakartotiSlaptazodi" class="form-control" />
                 <span asp-validation-for="PakartotiSlaptazodi" class="text-danger"></span>
             </div>
             <div class="form-group">
