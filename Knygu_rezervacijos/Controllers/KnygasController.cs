@@ -22,7 +22,8 @@ namespace Knygu_rezervacijos.Controllers
         // GET: Knygas
         public async Task<IActionResult> Index()
         {
-              return _context.Knyga != null ? 
+       
+            return _context.Knyga != null ? 
                           View(await _context.Knyga.ToListAsync()) :
                           Problem("Entity set 'Knygu_rezervacijosContext.Knyga'  is null.");
         }

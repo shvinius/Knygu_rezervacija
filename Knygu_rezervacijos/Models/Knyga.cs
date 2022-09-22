@@ -25,6 +25,7 @@ namespace Knygu_rezervacijos.Models
         public int PuslapiuSkaicius { get; set; }
         public int Kiekis { get; set; }
         public Kategorijos Kategorijos { get; set; }
+
         public virtual ICollection<Skaitytojas> Skaitytojai { get; set; }
         public virtual ICollection<Rezervacija> Rezervacijos { get; set; }
     }
